@@ -1,0 +1,16 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#252525",
+    "titleBar.inactiveForeground": "#252525",
+    "titleBar.activeBackground": "#00ee4f",
+    "titleBar.inactiveBackground": "#00ee4f"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  }
+}
