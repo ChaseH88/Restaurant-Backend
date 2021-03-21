@@ -6,5 +6,9 @@ export default new GraphQLServer({
     "src/schema.graphql"
   ],
   resolvers,
-  context: req => ({ ...req })
+  context: ({ req, res, ...rest }: any) => ({
+    req,
+    res,
+    userId: req?.headers?.userid
+  })
 });
