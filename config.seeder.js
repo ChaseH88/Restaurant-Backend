@@ -11,7 +11,8 @@ export default {
   plugins: [
     typescript({
       typescript: require('typescript'),
-      rollupCommonJSResolveHack: true
+      rollupCommonJSResolveHack: true,
+      tsconfig: "tsconfig.seeder.json",
     }),
     commonjs({
       include: 'node_modules/**',

@@ -1,10 +1,6 @@
 import mongoose from 'mongoose';
 
-interface DatabaseInterface {
-  start(): void
-}
-
-class Database implements DatabaseInterface {
+class Database {
 
   private connection: string = '';
   private username: string   = 'chase123';
@@ -22,6 +18,9 @@ class Database implements DatabaseInterface {
 
     // Set the connection string
     this.connectionString();
+
+    // Establish the database connection
+    (async () => await this.start())();
 
   }
 

@@ -34,7 +34,7 @@ class Seeder {
    */
   public importData = async (): Promise<void> => {
 
-    await new Database().start();
+    await new Database();
 
     this.log('Importing JSON data...');
 
@@ -63,7 +63,7 @@ class Seeder {
    */
   public deleteData = async (): Promise<void> => {
 
-    await new Database().start();
+    await new Database();
 
     try {
 
