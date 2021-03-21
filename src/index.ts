@@ -1,9 +1,7 @@
 import server from './server';
-import { Database } from './database';
+import { Database } from './classes';
 
-const db = new Database();
-db.start();
-
-server.start(() =>
+server.start(() => {
+  new Database().start();
   console.log('Server is running on http://localhost:4000/')
-);
+});
