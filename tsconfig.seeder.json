@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "outFile": "./dist/seeder.js"
+  },
+  "include": [
+    "./src/classes/Seeder.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
