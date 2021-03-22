@@ -1,8 +1,15 @@
+import { ScheduleDB } from './classes';
+
 export default {
   Query: {
 
-    // For Testing
-    hello: (_: any, { name }: any) => `Hello ${name || 'World'}`,
+    allSchedules: async () => (
+      await new ScheduleDB().findAll()
+    ),
+
+    findSchedule: async (_: any, args: { id: string }) => (
+      await new ScheduleDB().findOne(args.id)
+    ),
 
   }
 }

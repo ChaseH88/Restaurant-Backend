@@ -1,6 +1,6 @@
 [
   {
-    "id": "6058f2939f978b7746440ce4",
+    "_id": "6058f2939f978b7746440ce4",
     "username": "ChaseH88",
     "password": "56395",
     "email": "chaseh88@gmail.com",
@@ -8,7 +8,7 @@
     "updatedAt": "2020-10-06T12:47:33.990+00:00"
   },
   {
-    "id": "6058f2939f978b7746440ce5",
+    "_id": "6058f2939f978b7746440ce5",
     "username": "admin",
     "password": "admin",
     "email": "admin@admin.com",

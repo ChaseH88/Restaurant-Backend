@@ -4,6 +4,7 @@ import fs from 'fs';
 import { Database } from './';
 import {
   User,
+  Schedule,
   TimeSlot
 } from '../models';
 
@@ -17,6 +18,7 @@ class Seeder {
 
   private seedInput: any = [
     { jsonFileName: 'users', mongooseModel: User },
+    { jsonFileName: 'schedules', mongooseModel: Schedule },
     { jsonFileName: 'time-slots', mongooseModel: TimeSlot },
   ];
 

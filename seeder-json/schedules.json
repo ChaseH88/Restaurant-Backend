@@ -1,14 +1,14 @@
 [
   {
-    "id": "4f6420991cea567635f7d125",
+    "_id": "6058fb0576c5a21af4930147",
     "name": "Schedule Testing",
     "description": "This is a schedule description.",
     "timeSlots": [
-      "5f1c17d14f64a56763252090",
-      "5f1c17d14f64a56763252091",
-      "5f1c17d14f64a56763252092"
+      "6058fb0576c5a21af4930148",
+      "6058fb0576c5a21af4930149",
+      "6058fb0576c5a21af493014a"
     ],
-    "owner": "5f79d5656ab1b9311d49x4t5",
+    "owner": "6058f2939f978b7746440ce5",
     "createdAt": "2020-10-06T12:47:33.990+00:00",
     "updatedAt": "2020-10-06T12:47:33.990+00:00"
   }
