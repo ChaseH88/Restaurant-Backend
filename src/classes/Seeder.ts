@@ -2,7 +2,10 @@ import fs from 'fs';
 
 // Database
 import { Database } from './';
-import { User } from '../models';
+import {
+  User,
+  TimeSlot
+} from '../models';
 
 /**
  * Seed your Mongo Database with this convienent class to handle it all behind the scenes.
@@ -12,8 +15,9 @@ import { User } from '../models';
  */
 class Seeder {
 
-  private seedInput = [
+  private seedInput: any = [
     { jsonFileName: 'users', mongooseModel: User },
+    { jsonFileName: 'time-slots', mongooseModel: TimeSlot },
   ];
 
   /**
@@ -22,8 +26,8 @@ class Seeder {
    */
   private getData = async (fileName: string): Promise<object | object[]> => (
     JSON.parse(
-      await fs.readFileSync(`${__dirname}/${fileName}.json`
-    ) as any, 'utf-8' as any
+      await fs.readFileSync(`${__dirname}/${fileName}.json`) as any,
+      'utf-8' as any
     )
   );
 
@@ -104,6 +108,18 @@ class Seeder {
 
 };
 
-export { Seeder };
+(async () => {
 
-new Seeder().importData();
+  const seed = new Seeder();
+
+  switch (process.argv[2]) {
+    case '--add':
+      await seed.importData();
+      break;
+    case '--delete':
+      await seed.deleteData();
+      break;
+    default:
+      break;
+  }
+})();

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "4f6420991cea567635f7d125",
+    "name": "Schedule Testing",
+    "description": "This is a schedule description.",
+    "timeSlots": [
+      "5f1c17d14f64a56763252090",
+      "5f1c17d14f64a56763252091",
+      "5f1c17d14f64a56763252092"
+    ],
+    "owner": "5f79d5656ab1b9311d49x4t5",
+    "createdAt": "2020-10-06T12:47:33.990+00:00",
+    "updatedAt": "2020-10-06T12:47:33.990+00:00"
+  }
+]

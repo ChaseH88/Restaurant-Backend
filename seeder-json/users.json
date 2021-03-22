@@ -1,15 +1,17 @@
 [
   {
-    "id": "5f7d14f64a567632520991ce",
+    "id": "6058f2939f978b7746440ce4",
     "username": "ChaseH88",
     "password": "56395",
+    "email": "chaseh88@gmail.com",
     "createdAt": "2020-10-06T12:47:33.990+00:00",
     "updatedAt": "2020-10-06T12:47:33.990+00:00"
   },
   {
-    "id": "5f79d5656ab1b9311d49x4t5",
+    "id": "6058f2939f978b7746440ce5",
     "username": "admin",
     "password": "admin",
+    "email": "admin@admin.com",
     "createdAt": "2020-10-06T12:47:33.990+00:00",
     "updatedAt": "2020-10-06T12:47:33.990+00:00"
   }

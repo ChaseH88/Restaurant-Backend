@@ -1,0 +1,41 @@
+[
+  {
+    "id": "5f1c17d14f64a56763252090",
+    "startTime": "Sun Mar 21 2021 21:00:01 GMT-0500 (Central Daylight Time)",
+    "endTime": "Sun Mar 21 2021 21:15:00 GMT-0500 (Central Daylight Time)",
+    "description": "This can be used for comments/notes/description.",
+    "employees": [
+      "6058f2939f978b7746440ce5",
+      "6058f2939f978b7746440ce4"
+    ],
+    "createdBy": "6058f2939f978b7746440ce5",
+    "createdAt": "2020-10-06T12:47:33.990+00:00",
+    "updatedAt": "2020-10-06T12:47:33.990+00:00"
+  },
+  {
+    "id": "5f1c17d14f64a56763252091",
+    "startTime": "Sun Mar 21 2021 21:15:01 GMT-0500 (Central Daylight Time)",
+    "endTime": "Sun Mar 21 2021 21:30:00 GMT-0500 (Central Daylight Time)",
+    "description": "This can be used for comments/notes/description.",
+    "employees": [
+      "6058f2939f978b7746440ce5",
+      "6058f2939f978b7746440ce4"
+    ],
+    "createdBy": "6058f2939f978b7746440ce5",
+    "createdAt": "2020-10-06T12:47:33.990+00:00",
+    "updatedAt": "2020-10-06T12:47:33.990+00:00"
+  },
+  {
+    "id": "5f1c17d14f64a56763252092",
+    "startTime": "Sun Mar 21 2021 21:30:01 GMT-0500 (Central Daylight Time)",
+    "endTime": "Sun Mar 21 2021 21:45:00 GMT-0500 (Central Daylight Time)",
+    "description": "This can be used for comments/notes/description.",
+    "employees": [
+      "6058f2939f978b7746440ce5",
+      "6058f2939f978b7746440ce4"
+    ],
+    "createdBy": "6058f2939f978b7746440ce5",
+    "createdAt": "2020-10-06T12:47:33.990+00:00",
+    "updatedAt": "2020-10-06T12:47:33.990+00:00"
+  }
+]
