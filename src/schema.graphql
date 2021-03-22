@@ -1,5 +1,4 @@
 type Query {
-  hello(name: String): User
   allSchedules: [Schedule]
   findSchedule(id: ID): Schedule
 }
