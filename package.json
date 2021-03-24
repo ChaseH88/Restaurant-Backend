@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "graphql-yoga": "^1.18.3",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.1"
   }
 }

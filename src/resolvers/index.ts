@@ -1,7 +1,5 @@
-import { scheduleResolvers } from './schedules';
+import scheduleResolvers from './schedules';
 
 export default {
-  Query: {
-    ...scheduleResolvers
-  }
+  ...scheduleResolvers
 }
