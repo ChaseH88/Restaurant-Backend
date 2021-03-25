@@ -27,6 +27,17 @@ const ScheduleSchema: mongoose.Schema<ScheduleInterface> = new mongoose.Schema({
   }
 }, { timestamps: true });
 
+ScheduleSchema.post('deleteOne', async function(next){
+
+  // @ts-ignore
+  console.log(this);
+
+  // console.log(this?._conditions?._id);
+  // await this.model('Image').deleteMany({
+  //   images: this._id
+  // });
+});
+
 const Schedule = mongoose.model<ScheduleInterface>('Schedule', ScheduleSchema);
 
 export { Schedule }

@@ -5,6 +5,9 @@ import {
   User
 } from '../models';
 
+// classes
+import { TimeSlotsDB } from './';
+
 interface ScheduleDBInterface {
   findAll(): Promise<ScheduleInterface[]>,
   findOne(id: string): Promise<ScheduleInterface | null>
@@ -13,6 +16,8 @@ interface ScheduleDBInterface {
 }
 
 class ScheduleDB implements ScheduleDBInterface {
+
+  private timeSlotsDB = new TimeSlotsDB();
 
   /**
    * Finds all schedules
@@ -77,13 +82,22 @@ class ScheduleDB implements ScheduleDBInterface {
 
   /**
    * Deletes one schedule by ID
+   * Also utilizes TimeSlotsDB class to remove existing timeslots
    */
   public deleteOne = async (id: string) => {
+
     const schedule = await Schedule.findByIdAndDelete(id);
+
     if(!schedule){
       return 'No schedule found for given ID.'
     }
+
+    if(schedule?.timeSlots){
+      this.timeSlotsDB.removeTimeSlots(schedule!.timeSlots)
+    }
+
     return 'The schedule has been successfully deleted.'
+
   }
 }
 
