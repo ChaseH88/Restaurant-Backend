@@ -6,7 +6,7 @@ import {
 } from '../models';
 
 // classes
-import { TimeSlotsDB } from './';
+import { TimeSlotsDB, Logger } from './';
 
 interface ScheduleDBInterface {
   findAll(): Promise<ScheduleInterface[]>,
@@ -18,12 +18,13 @@ interface ScheduleDBInterface {
 class ScheduleDB implements ScheduleDBInterface {
 
   private timeSlotsDB = new TimeSlotsDB();
+  private log = new Logger();
 
   /**
    * Finds all schedules
    */
-  public findAll = async () => (
-    await Schedule.find().populate(
+  public findAll = async () => {
+    const data = await Schedule.find().populate(
       [
         {
           path: 'timeSlots',
@@ -39,7 +40,9 @@ class ScheduleDB implements ScheduleDBInterface {
         }
       ]
     )
-  )
+    this.log.write(JSON.stringify(data));
+    return data
+  }
 
   /**
    * Finds one schedule by ID
