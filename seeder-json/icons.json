@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "60653a693a77f149fcc197fb",
+    "name": "Icon Test 1",
+    "description": "Testing the icon description.",
+    "path": "https://pixabay.com/get/gac0de7805b4298a3dccf660eaecad33a178ecf4d5fcbf1f8f57652ba70c782c611b2b804edddeb4859a9438754ebfc2a_340.jpg",
+    "owner": "6058f2939f978b7746440ce4",
+    "createdAt": "2020-10-06T12:47:33.990+00:00",
+    "updatedAt": "2020-10-06T12:47:33.990+00:00"
+  },
+  {
+    "_id": "60653a693a77f149fcc197fa",
+    "name": "Icon Test 2",
+    "description": "Testing the icon description.",
+    "path": "https://pixabay.com/get/gb3262fbfed5a7fa436777ed64cbe0e7f14eb7b4567ebfde05470d3da0198a99ba81949427463d43d62f272b7b3520891_340.jpg",
+    "owner": "6058f2939f978b7746440ce4",
+    "createdAt": "2020-10-06T12:47:33.990+00:00",
+    "updatedAt": "2020-10-06T12:47:33.990+00:00"
+  }
+]

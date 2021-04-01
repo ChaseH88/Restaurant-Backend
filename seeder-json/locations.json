@@ -1,0 +1,15 @@
+[
+  {
+    "_id": "60653a693a77f149fcc197fe",
+    "street1": "123 Test Road",
+    "street2": "",
+    "unit": "",
+    "city": "Testing",
+    "state": "TS",
+    "zip": "12345",
+    "country": "Test",
+    "coordinates": "",
+    "createdAt": "2020-10-06T12:47:33.990+00:00",
+    "updatedAt": "2020-10-06T12:47:33.990+00:00"
+  }
+]

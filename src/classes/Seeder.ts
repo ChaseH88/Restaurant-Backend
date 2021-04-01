@@ -5,7 +5,10 @@ import { Database } from './';
 import {
   User,
   Schedule,
-  TimeSlot
+  TimeSlot,
+  Icon,
+  Image,
+  Location
 } from '../models';
 
 /**
@@ -20,6 +23,9 @@ class Seeder {
     { jsonFileName: 'users', mongooseModel: User },
     { jsonFileName: 'schedules', mongooseModel: Schedule },
     { jsonFileName: 'time-slots', mongooseModel: TimeSlot },
+    { jsonFileName: 'icons', mongooseModel: Icon },
+    { jsonFileName: 'images', mongooseModel: Image },
+    { jsonFileName: 'locations', mongooseModel: Location },
   ];
 
   /**

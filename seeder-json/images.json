@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "60653a693a77f149fcc197fc",
+    "name": "Image Test 1",
+    "description": "Testing the image description.",
+    "path": "https://pixabay.com/get/gfbba0b94583252fc23a6fe67258eda45bbcbb7aa1a58df4e4cf9bdebf278264e0d08088ff3941396a07ebe2141a57575_340.jpg",
+    "owner": "6058f2939f978b7746440ce4",
+    "createdAt": "2020-10-06T12:47:33.990+00:00",
+    "updatedAt": "2020-10-06T12:47:33.990+00:00"
+  },
+  {
+    "_id": "60653a693a77f149fcc197fd",
+    "name": "Image Test 2",
+    "description": "Testing the image description.",
+    "path": "https://pixabay.com/get/g507d3f54fabcb22fd10e9c520861b76208ce19ec81ca95453ef92aaa0d87a10ae218649e84f9f97ac98a57265f273e9b_340.jpg",
+    "owner": "6058f2939f978b7746440ce4",
+    "createdAt": "2020-10-06T12:47:33.990+00:00",
+    "updatedAt": "2020-10-06T12:47:33.990+00:00"
+  }
+]
