@@ -1,6 +1,6 @@
-import mongoose from "mongoose";
+import { Document, Schema, model } from "mongoose";
 
-export interface UserInterface extends mongoose.Document {
+export interface UserInterface extends Document {
   id: string,
   username: string,
   password: string,
@@ -16,7 +16,7 @@ export interface UserInterface extends mongoose.Document {
   updatedAt: Date
 }
 
-const UserSchema: mongoose.Schema<UserInterface> = new mongoose.Schema({
+const UserSchema: Schema<UserInterface> = new Schema({
   username: {
     type: String,
     required: [true, 'Please enter a username.'],
@@ -28,11 +28,11 @@ const UserSchema: mongoose.Schema<UserInterface> = new mongoose.Schema({
     select: false
   },
   title: {
-    type: mongoose.Schema.Types.ObjectId,
+    type: Schema.Types.ObjectId,
     ref: "Title"
   },
   role: {
-    type: mongoose.Schema.Types.ObjectId,
+    type: Schema.Types.ObjectId,
     ref: "Role"
   },
   biography: {
@@ -53,11 +53,11 @@ const UserSchema: mongoose.Schema<UserInterface> = new mongoose.Schema({
     type: String
   },
   location: {
-    type: mongoose.Schema.Types.ObjectId,
+    type: Schema.Types.ObjectId,
     ref: "Location"
   },
 }, { timestamps: true });
 
-const User = mongoose.model<UserInterface>('User', UserSchema);
+const User = model<UserInterface>('User', UserSchema);
 
 export { User }

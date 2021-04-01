@@ -1,6 +1,6 @@
-import mongoose from "mongoose";
+import { Document, Schema, model } from "mongoose";
 
-export interface ScheduleInterface extends mongoose.Document {
+export interface ScheduleInterface extends Document {
   id: string,
   name: string,
   description: string,
@@ -10,7 +10,7 @@ export interface ScheduleInterface extends mongoose.Document {
   updatedAt: Date
 }
 
-const ScheduleSchema: mongoose.Schema<ScheduleInterface> = new mongoose.Schema({
+const ScheduleSchema: Schema<ScheduleInterface> = new Schema({
   name: {
     type: String
   },
@@ -27,17 +27,6 @@ const ScheduleSchema: mongoose.Schema<ScheduleInterface> = new mongoose.Schema({
   }
 }, { timestamps: true });
 
-ScheduleSchema.post('deleteOne', async function(next){
-
-  // @ts-ignore
-  console.log(this);
-
-  // console.log(this?._conditions?._id);
-  // await this.model('Image').deleteMany({
-  //   images: this._id
-  // });
-});
-
-const Schedule = mongoose.model<ScheduleInterface>('Schedule', ScheduleSchema);
+const Schedule = model<ScheduleInterface>('Schedule', ScheduleSchema);
 
 export { Schedule }

@@ -1,6 +1,6 @@
-import mongoose from "mongoose";
+import { Document, Schema, model } from "mongoose";
 
-export interface TimeSlotInterface extends mongoose.Document {
+export interface TimeSlotInterface extends Document {
   id: string,
   startTime: Date,
   endTime: Date,
@@ -11,7 +11,7 @@ export interface TimeSlotInterface extends mongoose.Document {
   updatedAt: Date
 }
 
-const TimeSlotSchema: mongoose.Schema<TimeSlotInterface> = new mongoose.Schema({
+const TimeSlotSchema: Schema<TimeSlotInterface> = new Schema({
   startTime: {
     type: Date
   },
@@ -31,6 +31,6 @@ const TimeSlotSchema: mongoose.Schema<TimeSlotInterface> = new mongoose.Schema({
   }
 }, { timestamps: true });
 
-const TimeSlot = mongoose.model<TimeSlotInterface>('TimeSlot', TimeSlotSchema);
+const TimeSlot = model<TimeSlotInterface>('TimeSlot', TimeSlotSchema);
 
 export { TimeSlot }
