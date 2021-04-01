@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "60653f8413b1686455ea48b8",
+    "name": "guest",
+    "description": "Testing the role description.",
+    "accessLevel": 0,
+    "icon": "60653a693a77f149fcc197fb",
+    "owner": "6058f2939f978b7746440ce4",
+    "createdAt": "2020-10-06T12:47:33.990+00:00",
+    "updatedAt": "2020-10-06T12:47:33.990+00:00"
+  },
+  {
+    "_id": "60653f8413b1686455ea48b9",
+    "name": "employee",
+    "description": "Testing the role description.",
+    "accessLevel": 1,
+    "icon": "60653a693a77f149fcc197fb",
+    "owner": "6058f2939f978b7746440ce4",
+    "createdAt": "2020-10-06T12:47:33.990+00:00",
+    "updatedAt": "2020-10-06T12:47:33.990+00:00"
+  }
+]

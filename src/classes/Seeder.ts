@@ -8,7 +8,9 @@ import {
   TimeSlot,
   Icon,
   Image,
-  Location
+  Location,
+  Role,
+  Title
 } from '../models';
 
 /**
@@ -26,6 +28,8 @@ class Seeder {
     { jsonFileName: 'icons', mongooseModel: Icon },
     { jsonFileName: 'images', mongooseModel: Image },
     { jsonFileName: 'locations', mongooseModel: Location },
+    { jsonFileName: 'role', mongooseModel: Role },
+    { jsonFileName: 'title', mongooseModel: Title },
   ];
 
   /**
