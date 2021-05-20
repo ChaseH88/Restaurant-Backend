@@ -22,15 +22,18 @@ import {
 class Seeder {
 
   private seedInput: any = [
-    { jsonFileName: 'users', mongooseModel: User },
-    { jsonFileName: 'schedules', mongooseModel: Schedule },
-    { jsonFileName: 'time-slots', mongooseModel: TimeSlot },
-    { jsonFileName: 'icons', mongooseModel: Icon },
-    { jsonFileName: 'images', mongooseModel: Image },
-    { jsonFileName: 'locations', mongooseModel: Location },
-    { jsonFileName: 'role', mongooseModel: Role },
-    { jsonFileName: 'title', mongooseModel: Title },
-  ];
+    ['users', User ],
+    ['schedules', Schedule ],
+    ['time-slots', TimeSlot ],
+    ['icons', Icon ],
+    ['images', Image ],
+    ['locations', Location ],
+    ['role', Role ],
+    ['title', Title ],
+  ]
+  .map(([ a, b ]) => ({
+    'jsonFileName': a, 'mongooseModel': b
+  }))
 
   /**
    * Fetches the object data in the given sample file.

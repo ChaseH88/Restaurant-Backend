@@ -1,6 +1,4 @@
-import { ScheduleDB } from '../../classes';
-
-const schedule = new ScheduleDB();
+import { schedule } from './';
 
 const Query = {
 
